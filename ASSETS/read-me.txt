@@ -1,0 +1,6 @@
+meltmedia HTML/CSS test
+
+- Break out the supplied design using HTML & CSS
+- Attach any images and external style sheets inside a zip file
+- Send the zip file back to me as an attachment
+- Be prepared to discuss possible mobile solutions
