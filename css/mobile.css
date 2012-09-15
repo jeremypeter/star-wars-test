@@ -1,5 +1,9 @@
 @media only screen and (max-width:480px){
 
+html, body {
+  width: 100%;
+}
+
 #container,
 #header,
 #contentContainer,
