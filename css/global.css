@@ -219,6 +219,10 @@ h3 {
   line-height: 20px;
 }
 
+#sideBar .button:hover {
+  background-image: none;
+}
+
 .figContainer {
   margin: 60px 0 0;
   background-color: #d5d5d5;
@@ -351,7 +355,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.months li a:hover {
+#header a:hover, .months li a:hover, footer.link a:hover, #footer a:hover {
   text-decoration: underline;
 }
 
