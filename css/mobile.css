@@ -1,3 +1,20 @@
+
+/*
+
+--------------------------------
+          Sections
+--------------------------------
+
+  1. Mobile Landscape
+  2. Mobile Portrait
+
+*/
+
+
+/*-------------------------------------------------------------
+                    1. Mobile Landscape
+-------------------------------------------------------------*/
+
 @media only screen and (max-width:480px){
 
 html, body {
@@ -9,13 +26,14 @@ html, body {
 #contentContainer,
 #sideBar,
 #mainContent,
-#footer {
+#footer,
+.eventContainer {
+  /* margin: 0 auto; */
   width: 98%;
 }
 
-#container {
-  background-size: 100%;
-  background-position: 0 0;
+#header {
+  height: 120px;
 }
 
 .logo {
@@ -23,12 +41,12 @@ html, body {
 }
 
 #header nav {
-  margin-left: auto;
   float: none;
+  margin-left: auto;
 }
 
 #header nav a {
-  font-size: 80%
+  font-size: 80%;
 }
 
 #header h1 {
@@ -37,5 +55,184 @@ html, body {
   right: 11%;
 }
 
+#sideBar {
+  float: none;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+#sideBar nav a{
+  color: #fff;
+  border: 1px solid #3876a1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -moz-linear-gradient(top, #4c8ebc 0%, #4884ad 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c8ebc), color-stop(100%,#4884ad)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #4c8ebc 0%,#4884ad 100%); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top, #4c8ebc 0%,#4884ad 100%); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #4c8ebc 0%,#4884ad 100%); /* IE10+ */
+  background-image: linear-gradient(to bottom, #4c8ebc 0%,#4884ad 100%); /* W3C */
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  font-size: 100%;
+  margin: 1% 0;
+  padding: 9px 9px;
+  width: 100%;
+}
+
+#sideBar a.active, #sideBar li:hover a {
+  background: #dddddd; /* Old browsers */
+  background: -moz-linear-gradient(top, #dddddd 0%, #d5d5d5 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(99%,#d5d5d5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #dddddd 0%,#d5d5d5 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #dddddd 0%,#d5d5d5 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #dddddd 0%,#d5d5d5 99%); /* IE10+ */
+  background: linear-gradient(to bottom, #dddddd 0%,#d5d5d5 99%); /* W3C */
+  border: 1px solid #5b5b5b;
+}
+
+.figContainer {
+  margin-top: 0;
+  background-color: inherit;
+}
+
+.figInnerContainer {
+  border-bottom: 1px solid #3876a1;
+  border-top: 1px solid #3876a1;
+  margin: 10% 0;
+  margin-left: 0px;
+  overflow: hidden;
+  padding: 3%;
+  width: auto;
+}
+
+.figInnerContainer figure {
+  float: left;
+  font-size: 130%;
+  margin: 0;
+  text-align: left;
+  width: 65%;
+}
+
+.figInnerContainer figure img {
+  display: none;
+}
+
+.figContainer .button {
+  float: right;
+}
+
+.eventContainer header {
+  float: none;
+  width: auto;
+}
+
+.eventContainer img {
+  float: none;
+  margin: 10px 0;
+}
+
+.eventContainer .link {
+  margin-top: auto;
+}
+
+.pastEvents .left, .pastEvents .right {
+  float: none;
+  height: auto;
+  margin: auto;
+  width: auto;
+}
+
+.pastEvents .left {
+  border-bottom: 1px solid #949494;
+  border-right: none;
+
+}
+
+.pastEvents .right {
+  border-left: none;
+  border-top: 1px solid #fefefe;
+  padding-top: 15px;
+  padding-left: inherit;
+}
+
+#footer {
+  margin: 0 auto;
+}
+#footer .right, #footer .left {
+  float: none;
+}
+
+#footer .right {
+  position: static;
+  text-align: center;
+}
+
+#footer a {
+  font-size: 75%;
+}
+
+#footer img {
+  margin-top: 20px;
+}
+
+}
+
+/*-------------------------------------------------------------
+                    2. Mobile Portrait
+-------------------------------------------------------------*/
+
+@media only screen and (max-width:320px){
+
+#header {
+  height: 20px;
+
+}
+
+#header nav {
+  display: none;
+}
+
+#header h1 {
+  right: 7%;
+  bottom: -5px;
+  font-size: 120%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.figInnerContainer figure {
+  width: auto;
+}
+
+#footer ul li {
+  display: inherit;
+  border-right: none;
+}
+
+#footer a {
+  border: 1px solid #3876a1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-image: -moz-linear-gradient(top, #4c8ebc 0%, #4884ad 100%); /* FF3.6+ */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c8ebc), color-stop(100%,#4884ad)); /* Chrome,Safari4+ */
+  background-image: -webkit-linear-gradient(top, #4c8ebc 0%,#4884ad 100%); /* Chrome10+,Safari5.1+ */
+  background-image: -o-linear-gradient(top, #4c8ebc 0%,#4884ad 100%); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(top, #4c8ebc 0%,#4884ad 100%); /* IE10+ */
+  background-image: linear-gradient(to bottom, #4c8ebc 0%,#4884ad 100%); /* W3C */
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.4);
+  color: #fff;
+  display: block;
+  margin: 10px 0;
+}
 
 }

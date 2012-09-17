@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 <head>
   <title>Star Wars Test</title>
   <meta charset="UTF-8">
@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="css/global.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/mobile.css" media="all">
   <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
-    
 </head>
   <body>
   <div id="container">
@@ -17,9 +16,9 @@
 
       <nav>
         <ul>
-          <li><a href="#" title="DARK SIDE GUIDE">Dark Side Guide</a></li>
-          <li><a href="#" title="SITE MAP">Site Map</a></li>
-          <li><a href="#" title="GALACTIC EMPIRE NEWS">Galactic Empire News</a></li>
+          <li><a href="#" title="Dark Side Guide">Dark Side Guide</a></li>
+          <li><a href="#" title="Site Map">Site Map</a></li>
+          <li><a href="#" title="Galactic Empire News">Galactic Empire News</a></li>
         </ul>
       </nav>
       
@@ -34,19 +33,19 @@
     </header>
     <!-- END HEADER -->
 
-    <div id="contentContainer">     
+    <div id="contentContainer" class="cf">     
 
       <aside id="sideBar">
         <nav>
           <ul>
-            <li><a href="" title="">about the Empire</a></li>
-            <li><a href="" title="">dark side FAQs</a></li>
-            <li><a href="" title="">merchandise</a></li>
-            <li><a href="" title="">events</a></li>
-            <li><a href="" title="">Death Star Project</a></li>
+            <li><a href="" title="about the Empire">about the Empire</a></li>
+            <li><a href="" title="dark side FAQs">dark side FAQs</a></li>
+            <li><a href="" title="merchandise">merchandise</a></li>
+            <li><a class="active" href="" title="events">events</a></li>
+            <li><a href="" title="Death Star Project">Death Star Project</a></li>
           </ul>
         </nav>
-        <div class="figContainer clearfix">
+        <div class="figContainer">
             <div class="figInnerContainer">
               <figure>
                 <img src="images/figure-army.png" alt="Army">
@@ -55,33 +54,33 @@
             <a class="button" href="#" title="Register Now"><span class="register">Register Now</span></a>
           </div>
         </div>
-      </aside>      
+      </aside> 
+      <!-- END SIDEBAR -->
 
       <section id="mainContent">
         <header>
           <h2>events</h2>
         </header>         
-        <div class="eventContainer">          
+        <div class="eventContainer"> 
+
           <article>
             <header>
-              <h3>
-                Dark Side Singles Night
-                <span>7 NOV 2009</span>
-              </h3>
-              <span class="link">MEET THE ONE...<a href="#">details</a></span>           
+              <h3>Dark Side Singles Night<span>7 NOV 2009</span></h3>
             </header>
-            <img src="images/figure-singles-night.png" alt="">
+            <img src="images/figure-singles-night.png" alt="Singles Night" />
+            <footer class="link">
+              MEET THE ONE...<a href="#">details</a>
+            </footer>           
           </article>
           
           <article>
             <header>
-              <h3>
-                The Empire Pet Adoption
-                <span>12-15 DEC 2009</span>
-              </h3>
-              <span class="link"><a href="#">take me to your kittens</a></span>           
+              <h3>The Empire Pet Adoption<span>12-15 DEC 2009</span></h3>   
             </header>
-            <img src="images/figure-pet-adoption.png" alt="">
+            <img src="images/figure-pet-adoption.png" alt="Pet Adoptions" />
+            <footer class="link">
+              <a href="#">take me to your kittens</a>
+            </footer>
           </article>
           
           <article class="pastEvents">
@@ -97,10 +96,12 @@
             </div>
             
             <div class="right">
-              <h3>What event is next?
-                <span>It's always up to you</span>
-              </h3>
-              <span class="link"><a href="#" title="">suggest the next dark side event</a></span>
+              <header>
+                <h3>What event is next?<span>It's always up to you</span></h3>
+              </header>
+              <footer class="link">
+                <a href="#" title="">suggest the next dark side event</a>
+              </footer>
             </div>
           </article>            
           
@@ -109,16 +110,15 @@
         
       </section> 
       <!-- END MAIN CONTENT -->
-      
     </div>
     <!-- END CONTENT CONTAINER -->
 
-    <footer>
+    <footer id="footer">
         <div class="right">
           <ul>
-            <li><a href="#" title="">Contact the Death Star Project</a></li>
-            <li><a href="#" title="">Terms</a></li>
-            <li><a href="#" title="">Privacy</a></li>
+            <li><a href="#" title="Contact the Death Star Project">Contact the Death Star Project</a></li>
+            <li><a href="#" title="Terms">Terms</a></li>
+            <li><a href="#" title="Privacy">Privacy</a></li>
           </ul>
         </div>
         <div class="left">
